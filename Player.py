@@ -1,5 +1,14 @@
 import pygame
-import Main
+
+BLACK = (0, 0, 0)
+WHITE = (255, 255, 255)
+GREEN = (0, 255, 0)
+RED = (255, 0, 0)
+BLUE = (0, 0, 255)
+
+# Screen dimensions
+SCREEN_WIDTH = 800
+SCREEN_HEIGHT = 600
 
 class Player(pygame.sprite.Sprite):
     """ This class represents the bar at the bottom that the player
@@ -17,7 +26,7 @@ class Player(pygame.sprite.Sprite):
         width = 40
         height = 60
         self.image = pygame.Surface([width, height])
-        self.image.fill(Main.RED)
+        self.image.fill(RED)
 
         # Set a referance to the image rect.
         self.rect = self.image.get_rect()
@@ -72,9 +81,9 @@ class Player(pygame.sprite.Sprite):
             self.change_y += .35
 
         # See if we are on the ground.
-        if self.rect.y >= main.SCREEN_HEIGHT - self.rect.height and self.change_y >= 0:
+        if self.rect.y >= SCREEN_HEIGHT - self.rect.height and self.change_y >= 0:
             self.change_y = 0
-            self.rect.y = main.SCREEN_HEIGHT - self.rect.height
+            self.rect.y = SCREEN_HEIGHT - self.rect.height
 
     def jump(self):
         """ Called when user hits 'jump' button. """
@@ -87,7 +96,7 @@ class Player(pygame.sprite.Sprite):
         self.rect.y -= 2
 
         # If it is ok to jump, set our speed upwards
-        if len(platform_hit_list) > 0 or self.rect.bottom >= main.SCREEN_HEIGHT:
+        if len(platform_hit_list) > 0 or self.rect.bottom >= SCREEN_HEIGHT:
             self.change_y = -10
 
     # Player-controlled movement:
