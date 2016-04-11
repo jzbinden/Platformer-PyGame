@@ -1,7 +1,6 @@
 import pygame
-import Player
 
-from Player import Player
+from player import Player
 # Global constants
 
 # Colors

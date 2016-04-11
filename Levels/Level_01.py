@@ -1,6 +1,6 @@
-import Level
+import level
 
-class Level_01(Level):
+class Level_01(level):
     """ Definition for level 1. """
 
     def __init__(self, player):
