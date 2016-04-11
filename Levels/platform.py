@@ -14,7 +14,7 @@ class Platform(pygame.sprite.Sprite):
             an array of 5 numbers like what's defined at the top of this
             code. """
         super().__init__()
-
+        GREEN = (0, 255, 0)
         self.image = pygame.Surface([width, height])
         self.image.fill(GREEN)
 

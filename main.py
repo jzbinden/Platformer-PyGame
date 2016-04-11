@@ -1,7 +1,7 @@
 import pygame
 
 from Levels.Level_01 import Level_01
-from Player import Player
+from player import Player
 # Global constants
 
 # Colors
