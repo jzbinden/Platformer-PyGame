@@ -1,4 +1,6 @@
 import pygame
+import menu
+
 
 from Levels.Level_01 import Level_01
 from Player import Player
@@ -14,6 +16,7 @@ BLUE = (0, 0, 255)
 # Screen dimensions
 SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 600
+
 
 
 
@@ -102,5 +105,16 @@ def main():
     # on exit.
     pygame.quit()
 
+
+
+
 if __name__ == "__main__":
-    main()
+    size = [SCREEN_WIDTH, SCREEN_HEIGHT]
+    screen = pygame.display.set_mode(size)
+
+    menu1 = menu.dumbmenu(screen,['Start Game',
+                                  'Quit Game'], 64, 64, None, 32, 1.4, GREEN, RED)
+    if screen == 0:
+        main()
+    elif screen == 1:
+        pygame.quit()
