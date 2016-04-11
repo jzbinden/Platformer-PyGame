@@ -1,3 +1,6 @@
+import pygame
+import main
+
 class Player(pygame.sprite.Sprite):
     """ This class represents the bar at the bottom that the player
         controls. """
@@ -14,7 +17,7 @@ class Player(pygame.sprite.Sprite):
         width = 40
         height = 60
         self.image = pygame.Surface([width, height])
-        self.image.fill(RED)
+        self.image.fill(main.RED)
 
         # Set a referance to the image rect.
         self.rect = self.image.get_rect()
