@@ -18,9 +18,9 @@ class Level_01(Level):
                  ]
 
         # Go through the array above and add platforms
-        # for platform in level:
-        #     block = Platform(platform[0], platform[1])
-        #     block.rect.x = platform[2]
-        #     block.rect.y = platform[3]
-        #     block.player = self.player
-        #     self.platform_list.add(block)
+        for platform in level:
+             block = Platform(platform[0], platform[1])
+             block.rect.x = platform[2]
+             block.rect.y = platform[3]
+             block.player = self.player
+             self.platform_list.add(block)
