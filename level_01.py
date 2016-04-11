@@ -1,3 +1,5 @@
+import Level
+
 class Level_01(Level):
     """ Definition for level 1. """
 
@@ -5,7 +7,7 @@ class Level_01(Level):
         """ Create level 1. """
 
         # Call the parent constructor
-        Level.__init__(self, player)
+        level.__init__(self, player)
 
         # Array with width, height, x, and y of platform
         level = [[210, 70, 500, 500],
