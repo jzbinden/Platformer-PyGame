@@ -15,7 +15,7 @@ BLUE = (0, 0, 255)
 SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 600
 
-hallo = 4
+
 
 
 def main():
