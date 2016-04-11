@@ -1,3 +1,5 @@
+import pygame
+
 # Global constants
 
 # Colors
