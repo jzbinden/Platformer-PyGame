@@ -1,5 +1,6 @@
 import pygame
 
+from Levels.level_01 import Level_01
 from player import Player
 # Global constants
 

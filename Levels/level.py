@@ -25,6 +25,7 @@ class Level(object):
         """ Draw everything on this level. """
 
         # Draw the background
+        BLUE = (0, 0, 255)
         screen.fill(BLUE)
 
         # Draw all the sprite lists that we have
