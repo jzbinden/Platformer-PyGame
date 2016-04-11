@@ -2,7 +2,7 @@ from Levels.level import Level
 from Levels.platform import Platform
 
 
-class Level_01(Level):
+class Level_02(Level):
     """ Definition for level 1. """
 
     def __init__(self, player):
