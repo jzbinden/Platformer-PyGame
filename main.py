@@ -114,7 +114,7 @@ if __name__ == "__main__":
 
     menu1 = menu.dumbmenu(screen,['Start Game',
                                   'Quit Game'], 64, 64, None, 32, 1.4, GREEN, RED)
-    if screen == 0:
+    if menu1 == 0:
         main()
-    elif screen == 1:
+    elif menu == 1:
         pygame.quit()
