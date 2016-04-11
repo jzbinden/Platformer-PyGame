@@ -97,3 +97,6 @@ def main():
     # Be IDLE friendly. If you forget this line, the program will 'hang'
     # on exit.
     pygame.quit()
+
+if __name__ == "__main__":
+    main()
